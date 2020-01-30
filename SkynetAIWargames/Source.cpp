@@ -77,11 +77,11 @@ int main()
 	int answer = rand() % 64 + 1;
 
 
-	cout << "We've recieved intel that the enemy is within grids 1-64, find them!\n\n";
+	cout << "We've received intel that the enemy is within grids 1-64, find them!\n\n";
 
 
 	cout << "----------------------------------------------------------------------------\n" << endl;
-	cout << "Enter a number betwen 1-64 to search..." << endl;
+	cout << "Enter a number between 1-64 to search..." << endl;
 	//Human
 	while (humanSolved == false)
 	{
@@ -123,7 +123,7 @@ int main()
 	//displays human grid
 	cout << disp << displayGrid(humanArray) << endl;
 
-	
+
 	//Algorithm Ai
 	while (algorSolved == false)
 	{
@@ -171,7 +171,7 @@ int main()
 	//displays binary grid
 	cout << disp << displayGrid(binaryArray) << endl;
 
-	
+
 	// linear Ai
 	while (linSolved == false)
 	{
@@ -212,7 +212,7 @@ int main()
 	//displays linear grid
 	cout << disp << displayGrid(linearArray) << endl;
 
-	
+
 	//Rand Ai
 	while (ranSolved == false)
 	{
@@ -255,11 +255,11 @@ int main()
 
 	if (humans < random && humans < binary && humans < linear)
 	{
-		cout<<"\n Humans were the best at finding the target with " << humans << " guesses\n";
+		cout << "\n Humans were the best at finding the target with " << humans << " guesses\n";
 	}
-	else if (random < humans && random < binary && random < linear) 
+	else if (random < humans && random < binary && random < linear)
 	{
-		cout << "\n Random ai was the best at finding the target with "<< random <<" guesses\n";
+		cout << "\n Random ai was the best at finding the target with " << random << " guesses\n";
 	}
 	else if (binary < humans && binary < linear && binary < random) {
 		cout << "\n binary ai was the best at finding the target with " << binary << " guesses\n";
