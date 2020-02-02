@@ -112,13 +112,15 @@ int main()
 		{
 			//adds a guess
 			humans++;
+			// clears the screen
+			system("cls");
 			cout << "Target located! The Humans found the target at " << answer << " in " << humans << " guesses." << endl;
 			humanSolved = true;
 			cout << "----------------------------------------------------------------------------\n" << endl;
 		}
 
 	}
-
+	
 	cout << "\n Human's grid \n";
 	//displays human grid
 	cout << disp << displayGrid(humanArray) << endl;
